@@ -1,6 +1,9 @@
 # Interfaz de Banco
-
-interfaz de banco, para la creacion, edicion, eliminación, y consulta de datos.
+Interfaz de banco, para la creación, edición, eliminación, y consulta de datos.  </br>
+Los diseños y estilos están todos desarrollados con CSS vanila, y los elementos creados con etiquetas de html puro.
+Se hizo uso de Custom Hooks para el manejo del estado en el filtro de la barra de búsqueda, así como la actulización de resultados en la tabla, así mismo se creó funciones para la realización de peticiones de tipo: POST, PUT, DELETE y GET.
+ </br>
+Los componentes visuales y las páginas fueron subdivididas, en diferentes directorios, uno manejando la parte funcional, y el otro la parte visual, el cual hereda las propiedades necesarias, para su correcto funcionamiento. Así mismo se hizo uso de un directorio utils para la adición de funciones reutilizables.
 
 ## Instalación
 
