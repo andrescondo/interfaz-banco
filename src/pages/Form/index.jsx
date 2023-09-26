@@ -22,7 +22,7 @@ const initialInput = {
 const Form = () => {
   const [inputs, setInputs] = useState(initialInput);
   const [update, setUpdate] = useState(false);
-  const { id } = useParams();
+  const { id = null } = useParams();
 
   useEffect(() => {
     fetchWithoutBody({
@@ -35,6 +35,7 @@ const Form = () => {
         validateForm();
       }
     });
+    // eslint-disable-next-line
   }, []);
 
   const validateForm = () => {
@@ -43,10 +44,10 @@ const Form = () => {
       newInput.date_release = newInput.date_release.split('T')[0];
       newInput.date_revision = convertStringToDateMoreYear(
         newInput.date_release
-      );
-      setInputs(newInput);
-    });
-  };
+        );
+        setInputs(newInput);
+      });
+    };
 
   const onChange = (e) => {
     try {

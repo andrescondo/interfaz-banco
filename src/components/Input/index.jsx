@@ -29,6 +29,7 @@ const Input = (data) => {
       onChange={onChange}
       disabled={disabled}
       className={className}
+      errorMessage={errorMessage}
     />
   );
 };

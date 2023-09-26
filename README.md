@@ -16,7 +16,7 @@ npm install
 Luego correr el programa:
 
 ```bash
-npm run dev
+npm run start
 ```
 
 ## Funcionalidad
